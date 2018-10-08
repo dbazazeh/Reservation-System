@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fancyhotels.ConfirmationScreenController">
+   <children>
+      <TitledPane animated="false" prefHeight="400.0" prefWidth="600.0" text="Confirmation Screen">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="119.0" layoutY="110.0" text="Your Reservation ID" />
+                  <Label layoutX="178.0" layoutY="219.0" text="Please save this reservatiod id for all further communications">
+                     <font>
+                        <Font name="System Italic" size="11.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="backMenu" layoutX="275.0" layoutY="165.0" mnemonicParsing="false" text="Back to Menu" />
+                  <Label fx:id="reservationID11" layoutX="250.0" layoutY="108.0" prefHeight="21.0" prefWidth="136.0" />
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>

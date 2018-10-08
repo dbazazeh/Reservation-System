@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fancyhotels.CustomerFunctionalityScreenController">
+   <children>
+      <TitledPane animated="false" prefHeight="27.0" prefWidth="600.0" text="Choose Functionality">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TitledPane>
+      <Label fx:id="welcome" layoutX="70.0" layoutY="75.0" text="Welcome">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="newReservationLink" layoutX="70.0" layoutY="131.0" mnemonicParsing="false" onAction="#onNewReservation" text="Make a new reservation" />
+      <Button fx:id="updateReservationLink" layoutX="70.0" layoutY="169.0" mnemonicParsing="false" onAction="#onUpdateReservation" text="Update your reservation" />
+      <Button fx:id="cancelReservationLink" layoutX="70.0" layoutY="209.0" mnemonicParsing="false" onAction="#onCancelReservation" text="Cancel your reservation" />
+      <Button fx:id="giveFeedbackLink" layoutX="70.0" layoutY="249.0" mnemonicParsing="false" onAction="#onGiveFeedback" text="Provide feedback" />
+      <Button fx:id="viewFeedbackLink" layoutX="70.0" layoutY="287.0" mnemonicParsing="false" onAction="#onViewFeedback" text="View feedback" />
+   </children>
+</AnchorPane>

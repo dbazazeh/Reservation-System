@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fancyhotels.GiveReviewScreenController">
+   <children>
+      <TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Give Review">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="131.0" layoutY="67.0" text="Hotel Location" />
+                  <Label layoutX="174.0" layoutY="139.0" text="Rating" />
+                  <Label layoutX="156.0" layoutY="211.0" text="Comment" />
+                  <Button fx:id="submit" layoutX="504.0" layoutY="311.0" mnemonicParsing="false" onAction="#onSubmit" text="Submit" />
+                  <ChoiceBox fx:id="hotelLocation" layoutX="224.0" layoutY="63.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="rating" layoutX="224.0" layoutY="132.0" prefWidth="150.0" />
+                  <TextArea fx:id="comment" layoutX="224.0" layoutY="186.0" prefHeight="110.0" prefWidth="204.0" />
+                  <Label fx:id="allFieldsError" layoutX="285.0" layoutY="296.0" text="Label" textFill="RED">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="back" layoutX="27.0" layoutY="311.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>

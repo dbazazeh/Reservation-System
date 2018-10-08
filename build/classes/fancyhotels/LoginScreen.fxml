@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fancyhotels.LoginScreenController">
+   <children>
+      <TitledPane animated="false" prefHeight="400.0" prefWidth="600.0" text="Login">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="169.0" layoutY="108.0" text="Username" />
+                  <Label layoutX="170.0" layoutY="174.0" text="Password" />
+                  <PasswordField fx:id="passwordField" layoutX="281.0" layoutY="167.0" />
+                  <TextField fx:id="usernameField" layoutX="281.0" layoutY="101.0" />
+                  <Button fx:id="login" layoutX="329.0" layoutY="229.0" mnemonicParsing="false" onAction="#onLogin" text="Login" />
+                  <Hyperlink fx:id="newUserLink" layoutX="390.0" layoutY="308.0" onAction="#onNewUser" text="New user? Create account" />
+                  <Label fx:id="errorMessage2" layoutX="282.0" layoutY="56.0" prefHeight="16.0" prefWidth="155.0" textFill="RED" />
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fancyhotels.SearchRoomsScreenController">
+   <children>
+      <TitledPane animated="false" layoutY="-3.0" prefHeight="406.0" prefWidth="600.0" text="Search Rooms">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="84.0" layoutY="76.0" text="Location" />
+                  <Label layoutX="84.0" layoutY="143.0" text="Start Date" />
+                  <Label layoutX="343.0" layoutY="143.0" prefHeight="16.0" prefWidth="56.0" text="End Date" />
+                  <Button fx:id="searchRooms1" layoutX="475.0" layoutY="252.0" mnemonicParsing="false" text="Search" />
+                  <ChoiceBox fx:id="LocationItem1" layoutX="158.0" layoutY="69.0" prefWidth="150.0" />
+                  <DatePicker fx:id="startDate1" layoutX="158.0" layoutY="138.0" prefHeight="30.0" prefWidth="149.0" />
+                  <DatePicker fx:id="endDate1" layoutX="417.0" layoutY="138.0" prefHeight="30.0" prefWidth="141.0" />
+                  <Label fx:id="errorMessage3" layoutX="146.0" layoutY="223.0" prefHeight="16.0" prefWidth="190.0" textFill="#ff0101" />
+                  <Button fx:id="back" layoutX="66.0" layoutY="252.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>

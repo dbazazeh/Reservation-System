@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fancyhotels.ManagerFunctionalityScreenController">
+   <children>
+      <TitledPane animated="false" prefHeight="400.0" prefWidth="600.0" text="Choose Functionality">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="welcome" layoutX="47.0" layoutY="35.0" text="Welcome ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="viewReservationReport" layoutX="67.0" layoutY="85.0" onAction="#onViewReservation" text="View reservation report" />
+                  <Hyperlink fx:id="viewPopularRooms" layoutX="65.0" layoutY="141.0" onAction="#onViewPopularRooms" text="View popular room category" />
+                  <Hyperlink fx:id="viewRevenueReport" layoutX="65.0" layoutY="195.0" onAction="#onViewRevenue" text="View revenue report" />
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>
